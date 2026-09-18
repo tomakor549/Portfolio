@@ -1,3 +1,5 @@
+document.documentElement.classList.remove("lang-pending");
+
 const nav = document.getElementById("site-nav");
 const toggle = document.querySelector(".nav-toggle");
 const year = document.getElementById("year");

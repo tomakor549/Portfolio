@@ -27,6 +27,10 @@ html {
   color-scheme: dark;
 }
 
+html.lang-pending body {
+  visibility: hidden;
+}
+
 body {
   margin: 0;
   color: var(--ink);
@@ -243,6 +247,39 @@ p {
 .btn-github:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: stretch;
+  flex-shrink: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+}
+
+.lang-switch button {
+  min-width: 2.4rem;
+  min-height: 2.4rem;
+  padding: 0 0.55rem;
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.lang-switch button:hover:not([aria-pressed="true"]) {
+  color: var(--accent);
+}
+
+.lang-switch button[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--on-accent);
 }
 
 .nav-toggle {
@@ -638,6 +675,15 @@ p {
     border-radius: 10px;
   }
 
+  .lang-switch {
+    border-radius: 10px;
+  }
+
+  .lang-switch button {
+    min-width: 2.15rem;
+    min-height: 2.6rem;
+  }
+
   .btn-github span {
     position: absolute;
     width: 1px;
@@ -670,6 +716,12 @@ p {
   .contact-list li {
     grid-template-columns: 1fr;
     gap: 0.2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo-name {
+    display: none;
   }
 }
 
