@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <div class="page-bg" aria-hidden="true"></div>
+  <div class="page-grain" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Przejdź do treści</a>
 
   <header class="site-header">
@@ -45,6 +47,8 @@
 
   <main id="main">
     <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <img class="hero-branch" src="assets/ornament-branch.png" alt="" aria-hidden="true">
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Software Developer · Wodzisław Śląski</p>
@@ -63,7 +67,7 @@
           </ul>
         </div>
         <figure class="hero-photo">
-          <img src="assets/tomasz-korniluk.jpg" width="483" height="619" alt="Portret Tomasza Korniluka">
+          <img src="assets/tomasz-korniluk-hero.jpg" width="896" height="1152" alt="Portret Tomasza Korniluka">
         </figure>
       </div>
     </section>
@@ -179,48 +183,63 @@
         </header>
         <div class="projects">
           <article class="project">
-            <p class="project-tech">Qt / C++ · OpenCV</p>
-            <h3>Generowanie szumu obrazu</h3>
-            <p>
-              Aplikacja desktopowa do zniekształcania zdjęć — zmiana kolorów, manipulacja pikselami,
-              efekt rybiego oka, obrót, odbicie lustrzane. Służyła do budowy bazy obrazów pod trening
-              modeli sztucznej inteligencji.
-            </p>
+            <img class="project-visual" src="assets/projects/noise.jpg" alt="" width="1280" height="720">
+            <div class="project-body">
+              <p class="project-tech">Qt / C++ · OpenCV</p>
+              <h3>Generowanie szumu obrazu</h3>
+              <p>
+                Aplikacja desktopowa do zniekształcania zdjęć — zmiana kolorów, manipulacja pikselami,
+                efekt rybiego oka, obrót, odbicie lustrzane. Służyła do budowy bazy obrazów pod trening
+                modeli sztucznej inteligencji.
+              </p>
+            </div>
           </article>
           <article class="project">
-            <p class="project-tech">C# · .NET · Webcon</p>
-            <h3>Integracja Webcon z ePUAP</h3>
-            <p>
-              Dodatki do Webcon: wysyłanie i odbieranie dokumentów jako wiadomości w ePUAP
-              oraz cyfrowe podpisywanie zaufanym podpisem ePUAP. Rozszerzenie Visual Studio
-              dla Webcon.
-            </p>
+            <img class="project-visual" src="assets/projects/epuap.jpg" alt="" width="1280" height="720">
+            <div class="project-body">
+              <p class="project-tech">C# · .NET · Webcon</p>
+              <h3>Integracja Webcon z ePUAP</h3>
+              <p>
+                Dodatki do Webcon: wysyłanie i odbieranie dokumentów jako wiadomości w ePUAP
+                oraz cyfrowe podpisywanie zaufanym podpisem ePUAP. Rozszerzenie Visual Studio
+                dla Webcon.
+              </p>
+            </div>
           </article>
           <article class="project">
-            <p class="project-tech">.NET Core 6</p>
-            <h3>Automatyzacja skanowania 3D</h3>
-            <p>
-              Aplikacja dla skanera Evixscan Quadro+: logowanie do chmury, pobieranie zleceń,
-              automatyczne skanowanie obiektu, kalibracja płytką kalibracyjną, zatwierdzanie
-              lub odrzucanie skanów i tworzenie nowych zleceń.
-            </p>
+            <img class="project-visual" src="assets/projects/scan3d.jpg" alt="" width="1280" height="720">
+            <div class="project-body">
+              <p class="project-tech">.NET Core 6</p>
+              <h3>Automatyzacja skanowania 3D</h3>
+              <p>
+                Aplikacja dla skanera Evixscan Quadro+: logowanie do chmury, pobieranie zleceń,
+                automatyczne skanowanie obiektu, kalibracja płytką kalibracyjną, zatwierdzanie
+                lub odrzucanie skanów i tworzenie nowych zleceń.
+              </p>
+            </div>
           </article>
           <article class="project">
-            <p class="project-tech">.NET Core · mongodump</p>
-            <h3>Backup MSSQL i MongoDB</h3>
-            <p>
-              Biblioteka do asynchronicznych kopii zapasowych Microsoft SQL Server i MongoDB —
-              osobno albo jednocześnie — ze śledzeniem postępu i zdalnym połączeniem z wybraną bazą.
-            </p>
+            <img class="project-visual" src="assets/projects/backup.jpg" alt="" width="1280" height="720">
+            <div class="project-body">
+              <p class="project-tech">.NET Core · mongodump</p>
+              <h3>Backup MSSQL i MongoDB</h3>
+              <p>
+                Biblioteka do asynchronicznych kopii zapasowych Microsoft SQL Server i MongoDB —
+                osobno albo jednocześnie — ze śledzeniem postępu i zdalnym połączeniem z wybraną bazą.
+              </p>
+            </div>
           </article>
           <article class="project project-wide">
-            <p class="project-tech">Qt / QML · C++ · MQTT · OpenVidu · LiveKit</p>
-            <h3>Stacja szkolenia chirurgów</h3>
-            <p>
-              Aplikacja kioskowa: stolik, kamera na twarz i kamera mikroskopu 3D. Kursy chirurgiczne,
-              testy i egzaminy, połączenia zdalne między stacjami, podglądy kamer sterowane przez
-              prowadzącego, integracja z biblioteką ffmpeg w C++ oraz analiza zabiegów modelami AI / wizją komputerową.
-            </p>
+            <img class="project-visual" src="assets/projects/surgery.jpg" alt="" width="1280" height="720">
+            <div class="project-body">
+              <p class="project-tech">Qt / QML · C++ · MQTT · OpenVidu · LiveKit</p>
+              <h3>Stacja szkolenia chirurgów</h3>
+              <p>
+                Aplikacja kioskowa: stolik, kamera na twarz i kamera mikroskopu 3D. Kursy chirurgiczne,
+                testy i egzaminy, połączenia zdalne między stacjami, podglądy kamer sterowane przez
+                prowadzącego, integracja z biblioteką ffmpeg w C++ oraz analiza zabiegów modelami AI / wizją komputerową.
+              </p>
+            </div>
           </article>
         </div>
         <p class="projects-note">
@@ -277,6 +296,7 @@
     </section>
 
     <section class="section contact" id="kontakt">
+      <img class="contact-branch" src="assets/ornament-branch.png" alt="" aria-hidden="true">
       <div class="wrap split">
         <header class="section-head">
           <p class="eyebrow">Kontakt</p>
